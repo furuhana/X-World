@@ -24,12 +24,15 @@ Review the completed outfit as a game or animation character. Revise the design 
 ## Core Element and Deployment
 
 - Is there one primary core visual element and at most one supporting element?
+- Does the design avoid conspicuous core shapes, terminal shapes, accent systems, accessory placements, and silhouette solutions recently used by other characters unless this character has a stronger independent reason for them?
+- Is every occupationally derived distinctive form actually recognizable from the real object or procedure, rather than invented to make a convenient motif?
 - Is the primary element concrete enough to describe through a standard form and recognition anchors?
 - Does it remain recognizable through more than one allowed transformation?
 - Does the design use at least two different application methods rather than repeatedly copying the complete motif?
 - Do element applications suit the construction or function of their locations?
 - Does at least one major element application combine decoration with storage, protection, adjustment, fastening, mounting, reinforcement, or wearing comfort?
 - Does every claimed practical application answer an established character need rather than imitate generic utility or tactical styling?
+- Are ticks, scales, calibration lines, and measurement numerals confined to surfaces that are visibly read, aligned, adjusted, or measured?
 - Has the design avoided arbitrary element-shaped holes in single-layer garments?
 - Does every unusual opening have a clear access, ventilation, movement, adjustment, closure, or layered-construction purpose?
 - Are unusual opening edges visibly reinforced, finished, secured, or connected to an underlayer?
@@ -118,3 +121,5 @@ Review the completed outfit as a game or animation character. Revise the design 
 Reject and rebuild any accessory selection that skipped active derivation, forces objects into implausible locations for region variety, defaults every small object to the waist without reason, removes all meaningful objects merely because they are nonessential, or uses a conspicuous chest object without a credible source and visible attachment. Reject objects with ambiguous current states, unsupported weight, implausible access, unexplained suspension from the wrist or arm, or arbitrary relocation of body-specific functional items. Reject unexplained single gloves and any hand carrying an unrelated object while needed for the current action. Fix conflicts and remove unsupported or redundant objects while retaining meaningful accessories and carried items.
 
 Reject and rebuild any occupational design that depends entirely on badges or small tools for professional readability, defaults to visually anonymous modern workwear, or combines unrelated motifs into a costume collage. Reject any element system that remains only a broad theme, copies the complete symbol across every garment, gives every body region equal visual weight, leaves no quiet areas, or cuts arbitrary element-shaped holes into single-layer garments. Reject unusual openings without a practical purpose and visible construction logic. Reject any result that reads as a lean muscular man, conventional fitness model, realistic-height adult, small-headed or narrow-faced anime man, sharply tapered body, obese man, smooth-bellied strongman, or body-fat-dominant build. Reject any tight inner layer that hides the six-block abdominal contour, and reject collars or trapezius forms that visually swallow the head. Fix conflicts and remove weak elements before output. Mention only the most important changes and intentional omissions in `【设计复核与删减】`.
+
+Reject and rebuild a design that reuses a conspicuous recent motif, terminal shape, accent treatment, back-mounted silhouette, or equipment placement without a stronger independent basis. Reject invented occupational forms and decorative measurement markings that lack a visible reading or alignment function.

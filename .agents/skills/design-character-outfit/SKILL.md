@@ -23,6 +23,9 @@ Create a character outfit by deriving visible design decisions from the characte
 - Always perform an active accessory, carried-object, and wearing-relationship derivation. Accessories are likely to appear, but never fill a slot or meet a count with an object that lacks a credible source, wearing relationship, or clear visual responsibility.
 - Treat large, bright, highly decorative, precious-looking, or unusually conspicuous ornaments as low-probability candidates. Use them only when their structural, character, cultural, or compositional basis is strong enough for their visual weight.
 - Preserve a clear visual hierarchy. Remove elements that compete with the focal point or duplicate another element's purpose.
+- Audit recent characters in the current conversation before selecting a core element, color accent, accessory type, carrying location, or silhouette-changing object. Treat unexplained reuse as context contamination and replace it unless the current character independently provides a stronger, specific basis for it.
+- Do not turn a weak occupational association into a core element merely because it is geometrically deployable. Verify that the proposed form is a real, recognizable feature of the occupation or is strongly derived from this character's specific history, behavior, or scene.
+- Treat ticks, scales, ruler marks, calibration lines, and measurement numerals as functional information displays, not generic technical decoration. Use them only on an object that is visibly read, aligned, adjusted, or measured; do not scatter them onto clothing or footwear as accents.
 - Distinguish broad visual sources from deployable core visual elements. Define a core element's recognizable form, transformations, and full-body deployment before building the outfit.
 - Use one primary core element and at most one supporting element. Vary how the element enters clothing and accessories instead of copying the complete motif everywhere.
 - Prefer element applications that combine decoration with practical construction or use. Do not create arbitrary element-shaped openings in single-layer garments.
@@ -136,11 +139,13 @@ For the default target population, use a fighter-scale heavyweight male physique
 Do not default to a lean, narrow-waisted, long-necked, small-headed, small-faced, realistically proportioned, conventional fitness-model, obese, smooth-bellied, or body-fat-dominant build. Treat these body, head, and face rules as mandatory defaults, not optional flavor, while preserving explicit user instructions.
 
 ### 8. Edit the Overall Design
-
+ 
 Use `references/visual-design-checks.md`.
 
 Review the outfit as a complete game or animation design. Resolve wearing conflicts, hand occupancy, unsupported loads, implausible access paths, and unexplained asymmetry; improve silhouette and readability; and remove unsupported or redundant objects. Do not remove a meaningful object merely because it is not strictly necessary. Back-mounted equipment and other silhouette-changing objects must be considered during derivation, then retained or rejected according to their source, attachment, movement compatibility, and silhouette value.
 
+Compare the completed design against recent characters in the current conversation. Check for repeated core shapes, terminal shapes, accent colors, measurement markings, open short jackets, back-mounted cases, thigh-mounted boxes, and other recurring solutions. Reuse only when the current character independently demands it and the implementation is materially different; otherwise redesign the repeated choice.
+ 
 Revise the design before presenting it. Do not merely report problems.
 
 ### 9. Compile and Clean the Image Prompt

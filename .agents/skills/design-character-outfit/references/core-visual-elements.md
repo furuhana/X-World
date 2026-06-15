@@ -35,6 +35,10 @@ Sources are not limited to nature or literal symbols. Prefer an element that bel
 
 Select one primary element. Add one supporting element only when it improves contrast or specificity without competing with the primary element.
 
+Before selection, compare candidates with core elements and conspicuous secondary details used by recent characters in the current conversation. Repeated forks, splits, stars, frames, fans, ticks, scales, and similar forms require a new character-specific source strong enough to outweigh the risk of context contamination. Geometric convenience is not sufficient.
+
+Verify occupationally derived candidate forms against the real object or procedure that supposedly produced them. Do not alter an ordinary occupational object into a forked, split, stepped, toothed, calibrated, or otherwise distinctive form solely to obtain a stronger motif.
+
 ## Define the Element Grammar
 
 Before applying the primary element, define:
@@ -70,6 +74,8 @@ Use different application methods according to garment location and purpose. Pre
 Choose an application because it suits the location. Do not place a complete motif on every available garment part.
 
 Practical use must come from the character's actual wearing, carrying, protection, adjustment, movement, or occupational needs. Do not invent unnecessary pockets, straps, clasps, mounts, or protective pieces merely to make an element appear functional.
+
+Measurement ticks, calibration lines, ruler marks, and numerical scales require a visible reading or alignment relationship. Keep them on the measuring or adjustment surface where they are used. Do not use them as generic accents on hems, shoes, cases, straps, or unrelated hardware.
 
 Do not let examples of pockets, belt loops, clasps, mounts, or hardware bias all accessory applications toward the waist. Explore multiple body regions and wearing relationships before selecting an application.
 
@@ -133,6 +139,9 @@ Revise the element system when:
 - a single-layer garment receives an arbitrary element-shaped hole or cutout
 - an unusual opening lacks reinforcement, closure, underlayer, access purpose, ventilation purpose, or movement purpose
 - the design contains no stable recognition anchors
+- the element repeats a conspicuous form from a recent character without a stronger independent source
+- an occupational object was given an invented distinctive shape mainly to support the motif
+- measurement or calibration markings appear where nobody could meaningfully read or use them
 - every body region has equal visual weight
 - upper and lower garments compete without hierarchy
 - accessories merely duplicate already sufficient garment decoration
