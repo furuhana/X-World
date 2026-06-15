@@ -1,0 +1,4 @@
+interface:
+  display_name: "Character Outfit Designer"
+  short_description: "Design character outfits as text-only previews"
+  default_prompt: "Use $design-character-outfit to create a character outfit and return text-only English and Chinese prompt previews without generating an image."
