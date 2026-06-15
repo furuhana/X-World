@@ -37,6 +37,7 @@ Rewrite any slot-labeled inventory into connected visual sentences without intro
 - visible garments, fit, color, shape, condition, wearing method, and intentionally selected finish
 - when applicable, slightly shortened full-length trouser hems, the narrow visible band of white socks, and unobscured low-cut or ankle-height footwear
 - selected accessories, equipment, and their exact locations
+- visible construction logic for unusual openings, including any underlayer, reinforced edge, closure, flap, or practical access purpose
 - pose, expression, composition, viewing angle, lighting, and setting when relevant
 - character-focused key light, fill light, rim light, cel-shaded form shadows, and controlled highlights from invisible off-frame sources
 - smooth, polished, glossy, oily, or reflective finishes expressed only through clean two-dimensional highlight shapes and simplified reflections
@@ -47,7 +48,7 @@ Rewrite any slot-labeled inventory into connected visual sentences without intro
 ## Remove or Rewrite
 
 - backstory and reasons for choosing an item
-- professional research, player-association lists, candidate motifs, motif-selection rationale, and design-percentage explanations
+- professional research, player-association lists, visual sources, candidate elements, element grammar, deployment-plan labels, element-selection rationale, and design-percentage explanations
 - occupation names, job responsibilities, rank, wealth level, and social role when they are only labels
 - habits, motives, goals, risks, and events that are not visibly occurring in the requested image
 - invisible personality claims without a visible expression
@@ -60,6 +61,7 @@ Rewrite any slot-labeled inventory into connected visual sentences without intro
 - negative statements about items that are simply absent
 - surface texture patterns, fabric weave, leather grain, knit texture, pores, skin grain, stubble texture, scratches, distressed texture, granular detail, texture maps, PBR terminology, realistic material simulation, and photorealistic micro-detail
 - any environment, scenery, location, architecture, furniture, floor treatment, horizon, atmospheric effect, background object, visible light fixture, background glow, background gradient, or environmental reflection during the current pure-white-background testing phase
+- vague element-shaped `cutout` or `opening` descriptions that omit the visible underlayer, reinforced edge, closure, or practical purpose
 
 Material knowledge may guide garment structure internally, but do not name or describe material texture in the final prompt unless the user explicitly requests it. Distinguish allowed finish from prohibited texture:
 
@@ -72,6 +74,8 @@ Convert useful abstract information into visible facts before removing it:
 - `wealthy` -> precise tailoring, immaculate fabric, subtle high-quality hardware
 - `security-conscious` -> alert gaze and unobstructed hands
 - `the only accent color` -> name the selected accent color and its exact visible placement
+- `cross-star element system` -> name its visible applications, such as elongated cross-star panel divisions, a cross-star belt clasp, or raised inverted cross-star appliques at the trouser hems
+- `functional decorative cross-star detail` -> name the practical visible object, such as a cross-star-shaped reinforced pocket flap, adjustable fastening plate, or equipment-hanging loop
 
 ## Mandatory Cleaning Passes
 

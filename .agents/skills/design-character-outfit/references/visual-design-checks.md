@@ -14,12 +14,31 @@ Review the completed outfit as a game or animation character. Revise the design 
 - Is the occupation real, specific, and explainable?
 - Can a player identify the broad professional field from the major silhouette, garment structures, and color arrangement?
 - If badges, documents, and small tools were removed, would the outfit still communicate the broad professional field?
-- Did the design generate and compare multiple candidate motifs before choosing the dominant motif?
-- Does one dominant professional motif organize the design, with at most one supporting motif?
+- Did the design compare multiple professional visual sources before deriving the core visual element?
+- Did the design distinguish broad professional visual sources from the finished core visual element?
 - Are real occupational tools and identifiers clarifying the specific occupation rather than carrying all readability?
 - Has the outfit degraded into generic modern workwear, a generic suit, a generic jacket, or generic tactical clothing?
 - Is the design overly literal and ordinary because it prioritizes workplace accuracy above game readability?
 - Does the design avoid copying a completed existing character or stock costume?
+
+## Core Element and Deployment
+
+- Is there one primary core visual element and at most one supporting element?
+- Is the primary element concrete enough to describe through a standard form and recognition anchors?
+- Does it remain recognizable through more than one allowed transformation?
+- Does the design use at least two different application methods rather than repeatedly copying the complete motif?
+- Do element applications suit the construction or function of their locations?
+- Does at least one major element application combine decoration with storage, protection, adjustment, fastening, mounting, reinforcement, or wearing comfort?
+- Does every claimed practical application answer an established character need rather than imitate generic utility or tactical styling?
+- Has the design avoided arbitrary element-shaped holes in single-layer garments?
+- Does every unusual opening have a clear access, ventilation, movement, adjustment, closure, or layered-construction purpose?
+- Are unusual opening edges visibly reinforced, finished, secured, or connected to an underlayer?
+- Is there one clear primary expression with subordinate secondary and accent expressions?
+- Do the upper and lower body share a deliberate visual balance rather than compete?
+- Are details clustered intentionally instead of distributed evenly?
+- Are there sufficient quiet areas near strong element applications?
+- If small embroidery, badges, tools, and hanging ornaments were removed, would the core element still organize the outfit?
+- Does each accessory contribute a missing role rather than duplicate garment decoration?
 
 ## Body and Clothing
 
@@ -57,4 +76,4 @@ Review the completed outfit as a game or animation character. Revise the design 
 
 ## Final Revision
 
-Reject and rebuild any occupational design that depends entirely on badges or small tools for professional readability, defaults to visually anonymous modern workwear, or combines unrelated motifs into a costume collage. Reject any result that reads as a lean muscular man, conventional fitness model, realistic-height adult, small-headed or narrow-faced anime man, sharply tapered body, obese man, smooth-bellied strongman, or body-fat-dominant build. Reject any tight inner layer that hides the six-block abdominal contour, and reject collars or trapezius forms that visually swallow the head. Fix conflicts and remove weak elements before output. Mention only the most important changes and intentional omissions in `【设计复核与删减】`.
+Reject and rebuild any occupational design that depends entirely on badges or small tools for professional readability, defaults to visually anonymous modern workwear, or combines unrelated motifs into a costume collage. Reject any element system that remains only a broad theme, copies the complete symbol across every garment, gives every body region equal visual weight, leaves no quiet areas, or cuts arbitrary element-shaped holes into single-layer garments. Reject unusual openings without a practical purpose and visible construction logic. Reject any result that reads as a lean muscular man, conventional fitness model, realistic-height adult, small-headed or narrow-faced anime man, sharply tapered body, obese man, smooth-bellied strongman, or body-fat-dominant build. Reject any tight inner layer that hides the six-block abdominal contour, and reject collars or trapezius forms that visually swallow the head. Fix conflicts and remove weak elements before output. Mention only the most important changes and intentional omissions in `【设计复核与删减】`.

@@ -1,6 +1,6 @@
 ---
 name: design-character-outfit
-description: Infer and design coherent clothing, accessories, equipment, and text-only prompt previews for game or animation characters. Use when the user says "创建人物", asks to create or dress a character, requests a character outfit derived from identity and scene, or wants an existing character design reviewed and compiled into English and Chinese prompt text without generating an image.
+description: Infer core visual elements and design coherent clothing, accessories, equipment, and text-only prompt previews for game or animation characters. Use when the user says "创建人物", asks to create or dress a character, requests a reusable outfit design element or motif, requests a character outfit derived from identity and scene, or wants an existing character design reviewed and compiled into English and Chinese prompt text without generating an image.
 ---
 
 # Design Character Outfit
@@ -22,6 +22,9 @@ Create a character outfit by deriving visible design decisions from the characte
 - Prefer professional, affluent, authoritative, specialist, creative, or socially distinctive occupations. Avoid labor-intensive occupations unless the user requests one.
 - Treat accessories, handheld items, mounts, and decorative details as optional. Never fill a slot merely because it exists.
 - Preserve a clear visual hierarchy. Remove elements that compete with the focal point or duplicate another element's purpose.
+- Distinguish broad visual sources from deployable core visual elements. Define a core element's recognizable form, transformations, and full-body deployment before building the outfit.
+- Use one primary core element and at most one supporting element. Vary how the element enters clothing and accessories instead of copying the complete motif everywhere.
+- Prefer element applications that combine decoration with practical construction or use. Do not create arbitrary element-shaped openings in single-layer garments.
 - Use broad garment categories plus inferred attributes. Do not require an exhaustive clothing encyclopedia.
 - Make the English image prompt authoritative. Make the Chinese prompt a faithful translation only; do not add details.
 - Do not invent a personal name during outfit tests unless the user requests one or a name materially helps the task. Identify the character by role or a neutral label instead.
@@ -66,26 +69,35 @@ Translate identity and situation into visible requirements:
 
 Keep this derivation concise. State design consequences rather than narrating every reasoning step.
 
-### 4. Derive the Game-Readable Professional Outfit
+### 4. Derive the Game-Readable Professional Visual Sources
 
 Read `references/professional-visual-language.md`.
 
 For every occupational character:
 
 1. Identify the real specific occupation and its broader professional field.
-2. Generate multiple player-recognizable visual motifs associated with that field.
-3. Select one dominant motif and optionally one supporting motif according to the character, culture, scene, and world.
-4. Build the major silhouette, garment structures, and color arrangement from the selected motifs.
-5. Use a small number of real occupational tools, protective items, or identifiers to clarify the specific occupation.
-6. Add character-specific game exaggeration without weakening professional readability.
+2. Generate multiple player-recognizable visual sources associated with that field.
+3. Compare them according to the character, culture, scene, and world.
+4. Preserve the strongest sources for core-element derivation rather than treating a broad association as a finished element.
+5. Identify a small number of real occupational tools, protective items, or identifiers that may clarify the specific occupation.
 
 Do not use a fixed profession-to-outfit mapping or automatically select the first familiar association.
 
-### 5. Build the Outfit
+### 5. Derive the Core Visual Element System
+
+Read `references/core-visual-elements.md`.
+
+Derive one primary core visual element from the established character, professional visual sources, culture, behavior, history, scene, or other relevant sources. The source may be natural, cultural, occupational, geometric, behavioral, or narrative; it is not limited to plants or literal symbols.
+
+Define the element's standard form, recognition anchors, allowed transformations, forbidden transformations, and suitable application methods. Add at most one supporting element when it improves specificity without competing with the primary element.
+
+Then create a full-body deployment plan before selecting garments. Assign a primary expression, secondary expressions, restrained accents, optional implicit applications, quiet areas, and an upper-versus-lower-body visual balance. Do not use the complete element repeatedly on every garment.
+
+### 6. Build the Outfit
 
 Read `references/outfit-slots.md`.
 
-Select only useful slots. For each selected item, specify concrete visible attributes such as garment type, silhouette, fit, length, color, closure, condition, wearing method, and location. Use material knowledge internally to infer structure, but do not automatically turn it into surface texture detail.
+Select only useful slots. For each selected item, specify concrete visible attributes such as garment type, silhouette, fit, length, color, closure, condition, wearing method, and location. Apply the established element deployment plan according to each location's structure and function. Use material knowledge internally to infer structure, but do not automatically turn it into surface texture detail.
 
 For the default target population, use a fighter-scale heavyweight male physique as a required invariant unless the user explicitly requests another body type:
 
@@ -102,7 +114,7 @@ For the default target population, use a fighter-scale heavyweight male physique
 
 Do not default to a lean, narrow-waisted, long-necked, small-headed, small-faced, realistically proportioned, conventional fitness-model, obese, smooth-bellied, or body-fat-dominant build. Treat these body, head, and face rules as mandatory defaults, not optional flavor, while preserving explicit user instructions.
 
-### 6. Edit the Overall Design
+### 7. Edit the Overall Design
 
 Use `references/visual-design-checks.md`.
 
@@ -110,11 +122,11 @@ Review the outfit as a complete game or animation design. Resolve wearing confli
 
 Revise the design before presenting it. Do not merely report problems.
 
-### 7. Compile and Clean the Image Prompt
+### 8. Compile and Clean the Image Prompt
 
 Read `references/prompt-compilation.md`.
 
-Compile the English prompt from the finalized visible design, not by copying prose from `【人物基础】`, `【角色设计方向】`, or `【服装需求推导】`.
+Compile the English prompt from the finalized visible design, not by copying prose from `【人物基础】`, `【角色设计方向】`, `【服装需求推导】`, `【职业视觉推导】`, `【核心设计元素】`, or `【元素部署方案】`.
 
 Treat outfit slots as internal planning structure only. Rewrite the final English prompt as coherent, natural visual prose rather than a slot list, labeled modules, keyword pile, or template-like concatenation.
 
@@ -138,7 +150,7 @@ During the current text-testing phase, always specify an isolated full-body char
 
 Always append the fixed reference-image scope sentence from `references/prompt-compilation.md` as the final sentence of the English prompt. Always append its faithful Chinese translation as the final sentence of the Chinese prompt. Do not omit or paraphrase these fixed endings.
 
-### 8. Present the Result
+### 9. Present the Result
 
 Use this structure:
 
@@ -153,7 +165,13 @@ First impression, silhouette, focal point, colors, and density.
 Concise requirements and their visible design consequences.
 
 【职业视觉推导】
-Real occupation, professional field, player associations, candidate motifs, selected motifs, real occupational anchors, and game-character adaptation.
+Real occupation, professional field, player associations, candidate visual sources, real occupational anchors, and game-character adaptation.
+
+【核心设计元素】
+Visual sources, candidate elements, primary element, standard form, recognition anchors, allowed and forbidden transformations, optional supporting element, and selection rationale.
+
+【元素部署方案】
+Primary expression, secondary expressions, accents, implicit applications, quiet areas, and upper-versus-lower-body visual balance.
 
 【最终服装设计】
 Body, selected clothing slots, selected accessories/equipment, and signature detail.
@@ -174,6 +192,7 @@ Omit empty slot labels from `【最终服装设计】`. Keep the text preview us
 
 - Read `references/character-inference.md` when creating or completing a character profile.
 - Read `references/professional-visual-language.md` for every occupational character before selecting garments.
+- Read `references/core-visual-elements.md` after establishing visual sources and before selecting garments.
 - Read `references/outfit-slots.md` when selecting garments, accessories, equipment, or design density.
 - Read `references/visual-design-checks.md` when reviewing a completed character design.
 - Read `references/prompt-compilation.md` before producing final image prompts.

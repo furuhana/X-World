@@ -10,6 +10,24 @@ Assign each possible slot one status:
 
 Never output empty slots.
 
+## Apply the Element Deployment Plan
+
+Select garments and accessories after defining the core visual element and its full-body deployment plan.
+
+For each selected slot, decide:
+
+1. Does this location need an element application, or should it remain quiet?
+2. Which planned role does it carry: primary, secondary, accent, or implicit?
+3. Which application method suits its construction or function?
+4. Does this application repeat a complete motif already shown elsewhere?
+5. Does adding it upset the upper-versus-lower-body visual balance?
+
+Prefer useful decorative applications such as shaped pockets, reinforcement panels, protective overlays, adjustable tabs, closures, belt loops, mounts, and hardware. Use structural applications on major garments only when they follow plausible construction. Use restrained planar applications at focal accents and small accessory applications only when they add useful rhythm. Do not force every slot to carry the element.
+
+Do not cut an element-shaped opening into a single garment layer merely for decoration. Use a layered edge, attached overlay, shaped pocket, reinforced panel, or functional component instead. Allow an unusual opening only when it provides access, ventilation, movement, adjustment, or a secured reveal of an underlayer; specify how its edges and operation are constructed.
+
+Only add functional components that answer an established character need. Avoid decorative pseudo-function and do not default to generic cargo, utility, or tactical styling.
+
 ## Clothing Slots
 
 - outer layer
@@ -70,5 +88,8 @@ Before adding an optional item, check:
 3. Does it improve silhouette, rhythm, or hierarchy?
 4. Does another item already perform the same role?
 5. Is the design clearer when it is removed?
+6. Does it fulfill a planned element role or merely repeat an existing motif?
+7. Does the surrounding region still contain enough quiet space?
+8. Can its decorative role also improve storage, protection, adjustment, fastening, mounting, reinforcement, or wearing comfort?
 
 Omit the item when it lacks a clear contribution. Back-mounted equipment is especially optional because it strongly changes the silhouette.
