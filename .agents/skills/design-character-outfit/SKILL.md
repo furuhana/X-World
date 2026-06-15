@@ -20,7 +20,8 @@ Create a character outfit by deriving visible design decisions from the characte
 - Base every occupational character on a real, specific, explainable occupation, then derive a game-readable professional visual language instead of defaulting to literal modern workwear.
 - Show concise, reviewable design rationale. Do not expose private chain-of-thought.
 - Prefer professional, affluent, authoritative, specialist, creative, or socially distinctive occupations. Avoid labor-intensive occupations unless the user requests one.
-- Treat accessories, handheld items, mounts, and decorative details as optional. Never fill a slot merely because it exists.
+- Always perform an active accessory, carried-object, and wearing-relationship derivation. Accessories are likely to appear, but never fill a slot or meet a count with an object that lacks a credible source, wearing relationship, or clear visual responsibility.
+- Treat large, bright, highly decorative, precious-looking, or unusually conspicuous ornaments as low-probability candidates. Use them only when their structural, character, cultural, or compositional basis is strong enough for their visual weight.
 - Preserve a clear visual hierarchy. Remove elements that compete with the focal point or duplicate another element's purpose.
 - Distinguish broad visual sources from deployable core visual elements. Define a core element's recognizable form, transformations, and full-body deployment before building the outfit.
 - Use one primary core element and at most one supporting element. Vary how the element enters clothing and accessories instead of copying the complete motif everywhere.
@@ -65,6 +66,8 @@ Translate identity and situation into visible requirements:
 - actions the outfit must permit
 - environment and risks it must handle
 - objects the character needs to carry
+- personal objects suggested by identity, habits, relationships, history, or taste
+- wearing, connecting, carrying, storage, adjustment, and temporary-holding relationships
 - tradeoff among status, comfort, mobility, concealment, and protection
 
 Keep this derivation concise. State design consequences rather than narrating every reasoning step.
@@ -93,11 +96,29 @@ Define the element's standard form, recognition anchors, allowed transformations
 
 Then create a full-body deployment plan before selecting garments. Assign a primary expression, secondary expressions, restrained accents, optional implicit applications, quiet areas, and an upper-versus-lower-body visual balance. Do not use the complete element repeatedly on every garment.
 
-### 6. Build the Outfit
+### 6. Derive Accessories, Carried Objects, and Wearing Relationships
+
+Read `references/outfit-slots.md`.
+
+Every character must complete this derivation even when the final design is restrained. Generate at least:
+
+- one personal-object candidate derived from identity, habit, taste, relationship, or experience
+- one candidate with a wearing, connecting, carrying, storage, adjustment, temporary-holding, or use relationship
+- one large-object candidate that may materially change the silhouette
+
+Explore at least three different body regions or wearing relationships before selecting the final objects. Include possibilities beyond the waist, such as ear-area wearing, neck-and-chest suspension, cross-body structures, shoulder-and-back carrying, handheld or arm relationships, hip-and-leg relationships, and external silhouette-changing objects.
+
+For each candidate, establish its source, single current state, reason for being worn or carried, visible attachment or carrying method, weight support, movement or access behavior when relevant, hand or body-location conflicts, and visual responsibility. Usually preserve two or three meaningful objects, adjusted for the intended design density, but treat this as a loose guideline rather than a minimum. Do not add an unsupported object merely to reach this default or to diversify body regions, and do not remove a meaningful object merely because it is not strictly necessary.
+
+Treat gems, large metal ornaments, ornate brooches, luminous cores, and similarly high-visual-weight objects as low-probability candidates. They require a strong structural, cultural, identity, narrative, equipment, or compositional basis. Prefer ordinary, lived-in personal and carried objects for everyday characters.
+
+### 7. Build the Outfit
 
 Read `references/outfit-slots.md`.
 
 Select only useful slots. For each selected item, specify concrete visible attributes such as garment type, silhouette, fit, length, color, closure, condition, wearing method, and location. Apply the established element deployment plan according to each location's structure and function. Use material knowledge internally to infer structure, but do not automatically turn it into surface texture detail.
+
+Integrate selected accessories and carried objects as wearing relationships rather than isolated inventory. Keep the main chest-and-abdomen mass readable, but allow designed necklaces, cross-body straps, harnesses, suspended objects, cape fasteners, and chest connectors to cross part of the torso when they have an intentional attachment path and do not meaninglessly conceal the whole torso.
 
 For the default target population, use a fighter-scale heavyweight male physique as a required invariant unless the user explicitly requests another body type:
 
@@ -114,15 +135,15 @@ For the default target population, use a fighter-scale heavyweight male physique
 
 Do not default to a lean, narrow-waisted, long-necked, small-headed, small-faced, realistically proportioned, conventional fitness-model, obese, smooth-bellied, or body-fat-dominant build. Treat these body, head, and face rules as mandatory defaults, not optional flavor, while preserving explicit user instructions.
 
-### 7. Edit the Overall Design
+### 8. Edit the Overall Design
 
 Use `references/visual-design-checks.md`.
 
-Review the outfit as a complete game or animation design. Resolve wearing conflicts, improve silhouette and readability, and remove unnecessary objects. Back-mounted equipment and accessories are never mandatory.
+Review the outfit as a complete game or animation design. Resolve wearing conflicts, hand occupancy, unsupported loads, implausible access paths, and unexplained asymmetry; improve silhouette and readability; and remove unsupported or redundant objects. Do not remove a meaningful object merely because it is not strictly necessary. Back-mounted equipment and other silhouette-changing objects must be considered during derivation, then retained or rejected according to their source, attachment, movement compatibility, and silhouette value.
 
 Revise the design before presenting it. Do not merely report problems.
 
-### 8. Compile and Clean the Image Prompt
+### 9. Compile and Clean the Image Prompt
 
 Read `references/prompt-compilation.md`.
 
@@ -146,11 +167,11 @@ Do not impose a fixed word count. Keep all details that materially improve the i
 
 This step produces text only. Do not submit the compiled prompt to an image-generation tool.
 
-During the current text-testing phase, always specify an isolated full-body character on a seamless pure white background with no environment, horizon, floor line, scenery, architecture, furniture, atmospheric effects, or background objects. Preserve polished character-focused lighting from invisible off-frame sources, but do not let lighting create visible background content. Remove any conflicting scene description before output.
+During the current text-testing phase, always specify a full-body character on a pure white background. Remove any conflicting scene description before output, but do not add a list of excluded background content.
 
-Always append the fixed reference-image scope sentence from `references/prompt-compilation.md` as the final sentence of the English prompt. Always append its faithful Chinese translation as the final sentence of the Chinese prompt. Do not omit or paraphrase these fixed endings.
+Always append the fixed style sentence from `references/prompt-compilation.md` as the final sentence of the English prompt. Always append its faithful Chinese translation as the final sentence of the Chinese prompt. Do not omit or paraphrase these fixed endings.
 
-### 9. Present the Result
+### 10. Present the Result
 
 Use this structure:
 
@@ -172,6 +193,9 @@ Visual sources, candidate elements, primary element, standard form, recognition 
 
 【元素部署方案】
 Primary expression, secondary expressions, accents, implicit applications, quiet areas, and upper-versus-lower-body visual balance.
+
+【配饰、携带物与穿戴关系派生】
+Explored regions and relationships, candidate sources, selected objects, current states, attachment and load-support methods, access paths, hand occupancy, silhouette effects, and important rejected candidates.
 
 【最终服装设计】
 Body, selected clothing slots, selected accessories/equipment, and signature detail.

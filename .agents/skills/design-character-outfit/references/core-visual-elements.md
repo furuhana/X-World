@@ -64,12 +64,16 @@ Use different application methods according to garment location and purpose. Pre
 - **functional:** buckle, clasp, zipper pull, connector, fastening plate, closure, adjuster, or mount
 - **three-dimensional:** raised applique, folded form, padded shape, or independent ornament
 - **planar:** embroidery, print, patch, or simplified mark
-- **accessory:** pendant, earring, chain ornament, belt hardware, or small metal fitting
+- **accessory and wearing relationship:** ear-area wearing, neck-and-chest suspension, cross-body connection, shoulder-and-back carrying, handheld or arm attachment, hip-and-leg wrapping or suspension, or an external silhouette-changing object
 - **implicit:** seam direction, interrupted line, cropped fragment, layered reveal, or rhythm
 
 Choose an application because it suits the location. Do not place a complete motif on every available garment part.
 
 Practical use must come from the character's actual wearing, carrying, protection, adjustment, movement, or occupational needs. Do not invent unnecessary pockets, straps, clasps, mounts, or protective pieces merely to make an element appear functional.
+
+Do not let examples of pockets, belt loops, clasps, mounts, or hardware bias all accessory applications toward the waist. Explore multiple body regions and wearing relationships before selecting an application.
+
+High-visual-weight ornaments such as gems, ornate brooches, large metal fittings, and luminous cores are low-probability element applications. A conspicuous central chest application must have a visible attachment or load-bearing structure, a strong source, a visual responsibility proportionate to its weight, at least one structural echo, and one restrained visual echo. Do not repeat the same conspicuous ornament across the body merely to create unity.
 
 ## Control Openings and Cutouts
 
@@ -132,6 +136,9 @@ Revise the element system when:
 - every body region has equal visual weight
 - upper and lower garments compete without hierarchy
 - accessories merely duplicate already sufficient garment decoration
+- accessory applications default without reason to waist-mounted small objects
+- a conspicuous chest application floats without visible support or lacks a strong character, structural, or compositional basis
+- high-visual-weight ornaments become routine merely because the clothing is minimal or monochrome
 - removing small decorations removes the entire element system
 - the deployment plan leaves no quiet areas
 

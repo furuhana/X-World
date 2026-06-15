@@ -26,7 +26,7 @@ Prefer this order when it suits the image:
 
 Do not output slot labels, colon-led modules, inventory lists, repetitive `wearing... wearing...` clauses, disconnected keyword piles, or JSON-like prompt structures.
 
-During the current text-testing phase, describe the character against a seamless pure white background without environmental scenery or background objects. Character-focused lighting from invisible off-frame sources is allowed and encouraged when it improves finish quality. Integrate the lighting and pure white background naturally near the end of the main visual description.
+During the current text-testing phase, describe the character on a pure white background. Character-focused lighting from invisible off-frame sources is allowed when it improves finish quality. State the white background briefly near the end of the main visual description; do not append a list of excluded background content.
 
 Rewrite any slot-labeled inventory into connected visual sentences without introducing garments, colors, accessories, or equipment that were not selected during the design process.
 
@@ -37,13 +37,18 @@ Rewrite any slot-labeled inventory into connected visual sentences without intro
 - visible garments, fit, color, shape, condition, wearing method, and intentionally selected finish
 - when applicable, slightly shortened full-length trouser hems, the narrow visible band of white socks, and unobscured low-cut or ankle-height footwear
 - selected accessories, equipment, and their exact locations
+- visible wearing and carrying relationships, including attachment points, strap paths, suspension lengths, swing ranges when visually relevant, support structures, access paths, and load-bearing connections
+- each selected object's single visible current state: in active use, hand-carried, worn, attached for access, or stored
+- clear hand actions and intentionally open hands when required by the pose or activity
+- the selected side and concrete visible feature that establishes any intentional asymmetry in gloves or normally paired wearable items
+- visible attachment and support structures for any large, bright, luminous, precious-looking, or strongly contrasting central chest object
 - visible construction logic for unusual openings, including any underlayer, reinforced edge, closure, flap, or practical access purpose
 - pose, expression, composition, viewing angle, lighting, and setting when relevant
 - character-focused key light, fill light, rim light, cel-shaded form shadows, and controlled highlights from invisible off-frame sources
 - smooth, polished, glossy, oily, or reflective finishes expressed only through clean two-dimensional highlight shapes and simplified reflections
 - silhouette, focal point, color hierarchy, and image style
-- the current testing-phase seamless pure white background instruction
-- the exact fixed reference-image scope sentence at the very end
+- the current testing-phase short pure white background instruction
+- the exact fixed style sentence at the very end
 
 ## Remove or Rewrite
 
@@ -57,10 +62,16 @@ Rewrite any slot-labeled inventory into connected visual sentences without intro
 - vague praise such as "handsome" or "well designed"
 - repeated descriptions of the same feature
 - conflicting garments, colors, locations, or poses
+- unrelated handheld occupational objects that conflict with the current action
+- ambiguous descriptions that allow an object to appear either worn, held, attached, or stored
+- unsupported heavy or loose objects suspended from wrists or arms
+- body-specific functional objects placed at arbitrary locations, such as a wristwatch attached to a bag strap
+- unexplained single gloves or other unexplained asymmetric paired items
 - exhaustive descriptions of low-priority objects
+- invisible accessory rationale after its visible source, wearing method, attachment, movement, or visual consequence has been preserved
 - negative statements about items that are simply absent
 - surface texture patterns, fabric weave, leather grain, knit texture, pores, skin grain, stubble texture, scratches, distressed texture, granular detail, texture maps, PBR terminology, realistic material simulation, and photorealistic micro-detail
-- any environment, scenery, location, architecture, furniture, floor treatment, horizon, atmospheric effect, background object, visible light fixture, background glow, background gradient, or environmental reflection during the current pure-white-background testing phase
+- scene or background descriptions that conflict with the pure white background
 - vague element-shaped `cutout` or `opening` descriptions that omit the visible underlayer, reinforced edge, closure, or practical purpose
 
 Material knowledge may guide garment structure internally, but do not name or describe material texture in the final prompt unless the user explicitly requests it. Distinguish allowed finish from prohibited texture:
@@ -76,6 +87,8 @@ Convert useful abstract information into visible facts before removing it:
 - `the only accent color` -> name the selected accent color and its exact visible placement
 - `cross-star element system` -> name its visible applications, such as elongated cross-star panel divisions, a cross-star belt clasp, or raised inverted cross-star appliques at the trouser hems
 - `functional decorative cross-star detail` -> name the practical visible object, such as a cross-star-shaped reinforced pocket flap, adjustable fastening plate, or equipment-hanging loop
+- `the pendant is a keepsake` -> describe the visible pendant, suspension length, attachment, wear, and placement; omit the invisible memory unless it is visibly represented
+- `the gem fastens the cape` -> describe the gem setting, reinforced base, connecting straps or chains, attachment points, and visible direction of support
 
 ## Mandatory Cleaning Passes
 
@@ -96,6 +109,10 @@ Inspect the surviving prompt:
 3. Does any phrase conflict with another instruction?
 4. Can two phrases be compressed without losing visible information?
 5. Would deleting the phrase leave the generated image materially unchanged?
+6. Did compression accidentally remove an accessory's visible attachment, carrying path, support structure, or wearing relationship?
+7. Does every visible object still have one clear state and a credible load-bearing location?
+8. Does each hand perform at most one clear action?
+9. Does every asymmetric glove or normally paired wearable item include a concrete visible feature that establishes the asymmetry?
 
 Delete or compress anything that fails this pass. There is no fixed target length; retain useful specificity without diluting attention.
 
@@ -117,17 +134,17 @@ Reject and rewrite the prompt unless all conditions pass:
 1. The opening fully describes the enlarged heavyweight skeletal frame, moderately broad powerful waist, uniformly massive limbs, slightly enlarged proportionally substantial head with broad cranial volume, broad square face, oversized hands and feet, and larger-than-realistic heroic proportions created through mass and width rather than a shrunken head.
 2. The body description cannot reasonably be interpreted as lean, narrow-waisted, conventionally athletic, realistically proportioned, obese, smooth-bellied, or body-fat-dominant.
 3. The projecting abdomen is explicitly formed by six enormous raised abdominal blocks, and a tight inner layer preserves their readable contour through stretched fabric, shallow valleys, and controlled form shadows.
-4. The prompt explicitly requests an isolated full-body character on a seamless pure white background.
-5. The prompt contains no environment, scenery, location, horizon, floor line, architecture, furniture, atmospheric effects, background objects, visible light fixtures, background glow, background gradient, or environmental reflections.
-6. The pure white background instruction appears immediately before the fixed final reference-image sentence.
-7. Any lighting affects only the character through controlled highlights and form shadows; it does not create background content or a visible scene.
+4. The prompt explicitly requests a full-body character on a pure white background.
+5. The prompt does not describe a conflicting scene or background.
+6. The short pure white background instruction appears immediately before the fixed final style sentence.
+7. Any lighting affects only the character and does not create a visible scene.
 8. The head remains visually balanced with the body, and no collar, scarf, hood, lapel, or trapezius form encloses or shrinks its silhouette.
 
 ### Pass 5: Strict 2D Surface Gate
 
 Reject and rewrite the prompt unless all conditions pass:
 
-1. The image is explicitly a polished hand-drawn two-dimensional character illustration with refined cel-animation coloring and shading.
+1. The image is explicitly a refined two-dimensional cel-animation character illustration.
 2. No phrase requests 3D rendering, texture maps, PBR materials, photorealism, realistic surface texture, or micro-detail.
 3. Any smoothness, polish, gloss, oiliness, or reflection is represented through clean cel-shaded highlight shapes and simplified two-dimensional reflections.
 
@@ -156,15 +173,15 @@ Translate the final English prompt into Chinese after the English cleaning pass.
 Every English prompt must end with the following exact sentence, even when no reference image is currently attached:
 
 ```text
-Kyoto Animation-inspired refined 2D cel-animation coloring and shading, polished hand-drawn finish, and clearly readable muscular forms. Clean color shapes, controlled cel shadows, and selective two-dimensional highlights and reflections.
+Refined 2D cel-animation coloring with clean color shapes, controlled cel shadows, selective highlights, and clearly readable muscular forms.
 ```
 
 Every Chinese prompt must end with the following exact faithful translation:
 
 ```text
-京都动画式精致二维赛璐璐动画上色与阴影、高完成度手绘质感以及清晰可读的肌肉体块。干净色块、受控赛璐璐阴影，以及选择性的二维高光与反射。
+精致的二维赛璐璐动画上色，采用干净色块、受控赛璐璐阴影、选择性高光，并清晰表现肌肉体块。
 ```
 
-Place the seamless pure white background instruction immediately before this fixed final sentence. Do not omit, paraphrase, shorten, or place content after the fixed final sentence during the current testing phase.
+Place the short pure white background instruction immediately before this fixed final sentence. Do not omit, paraphrase, shorten, or place content after the fixed final sentence during the current testing phase.
 
-Interpret `Kyoto Animation-inspired refined 2D cel-animation coloring and shading` only as linework, coloring, shading, controlled highlights, simplified reflections, and finish quality. It must never shrink the head, narrow the face, reduce body mass, create a lean waist, shrink the hands or feet, or restore realistic human proportions.
+The fixed style sentence controls only coloring, shading, highlights, and muscular readability. It must never shrink the head, narrow the face, reduce body mass, create a lean waist, shrink the hands or feet, or restore realistic human proportions.
